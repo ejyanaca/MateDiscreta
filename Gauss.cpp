@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
     int n;  
-    cout<<"\nIngrese el orden de la matriz nxn: "; 
+    cout<<"\nIngrese el orden de la matriz nxn (max 50): "; 
     cin>>n; 
-    if(n<=0){
+    if(n<=0||n>50){
         cout<<"ERROR: Orden de la matriz invalida"<<endl; 
     }else{
         float A[n][n]; 
